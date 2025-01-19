@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.font-poppins {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Shared-style */
+.display-flex {
+    display: flex;
+}
+
+.btn-primary {
+    color: white;
+    font-weight: bold;
+    border-radius: 41px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    padding: 10px 56px 10px 24px;
+    border: none;
+}
+
+/* Header */
+header {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* Nav Styles */
+.nav {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-items {}
+
+.nav-item {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 34px;
+}
+/* banner */
+.banner{
+    gap: 100px;
+    padding-bottom: 50px;
+}
+.banner-title{
+    font-size: 32px;
+    font-weight: bold;
+    color: #3A3A3A;
+}
+.banner-description{
+    font-weight: 420;
+}
+img{
+    width: 100%;
+}
+.background-circle {
+    position: relative; /* To position the child elements inside */
+    width: 420px; /* Set width for the circle */
+    height: 420px; /* Set height for the circle */
+    background: url('images/Circle design.svg') no-repeat center center; /* vertically and hr center */
+    background-size: contain; /* Ensure the circle scales properly */
+}
+
+.img-camera {
+    position: absolute; /* Position relative to the parent (background-circle) */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the camera image's size */
+    width: 95%; /* Adjust camera size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Sponsor */
+.sponsor-items-img{
+    gap: 35px;
+    justify-content: space-between;
+}
+.sponsor-img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

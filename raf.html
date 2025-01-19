@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .images {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height for example */
+}
+
+.background-circle {
+    position: relative; /* To position the child elements inside */
+    width: 200px; /* Set width for the circle */
+    height: 200px; /* Set height for the circle */
+    background: url('images/Circle design.svg') no-repeat center center; /* Add circle as background */
+    background-size: contain; /* Ensure the circle scales properly */
+}
+
+.img-camera {
+    position: absolute; /* Position relative to the parent (background-circle) */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the camera image's size */
+    width: 100px; /* Adjust camera size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+    </style>
+</head>
+<body>
+    <div class="images">
+        <div class="background-circle">
+            <img class="img-camera" src="images/main-camera.png" alt="Camera">
+        </div>
+    </div>
+</body>
+</html>
