@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,5 +37,70 @@
             <img class="img-camera" src="images/main-camera.png" alt="Camera">
         </div>
     </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 star</title>
+    <style>
+        /* Star Rating Container */
+.star-rating {
+    display: flex;
+    justify-content: center; /* Center-align the stars */
+    align-items: center;
+    gap: 5px; /* Space between stars */
+}
+
+/* Full stars */
+.full-star {
+    font-size: 2rem;
+    color: #f5c518; /* Yellow color for full stars */
+}
+
+/* Half star container */
+.half-star {
+    font-size: 2rem;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    color: #f5c518; /* Yellow for the left half */
+}
+
+/* Left half of the star */
+.half-star .left-half {
+    position: absolute;
+    width: 50%;
+    overflow: hidden; /* Only show the left half */
+    top: 0;
+    left: 0;
+}
+
+/* Right half of the star */
+.half-star .right-half {
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    color: #ccc; /* Gray color for the empty part */
+}
+
+    </style>
+</head>
+<body>
+    <div class="star-rating">
+        <div class="full-star">&#9733;</div>
+        <div class="full-star">&#9733;</div>
+        <div class="full-star">&#9733;</div>
+        <div class="full-star">&#9733;</div>
+        <div class="half-star">
+            <span class="left-half">&#9733;</span>
+            <span class="right-half">&#9734;</span>
+        </div>
+    </div>
+    
 </body>
 </html>

@@ -17,13 +17,18 @@
     border-radius: 41px;
     background-color: #E02C6D;
     font-size: 16px;
-    padding: 10px 56px 10px 24px;
+    padding: 10px 40px 10px 40px;
     border: none;
+}
+
+.color-font-common {
+    font-weight: bold;
+    color: #787885;
 }
 
 /* Header */
 header {
-    width: 900px;
+    width: 1100px;
     margin: 0 auto;
 }
 
@@ -46,45 +51,247 @@ header {
     list-style: none;
     margin-right: 34px;
 }
+
 /* banner */
-.banner{
+.banner {
     gap: 100px;
     padding-bottom: 50px;
 }
-.banner-title{
-    font-size: 32px;
+
+.banner-title {
+    font-size: 40px;
     font-weight: bold;
     color: #3A3A3A;
 }
-.banner-description{
+
+.banner-description {
     font-weight: 420;
 }
-img{
+
+img {
     width: 100%;
 }
+
 .background-circle {
-    position: relative; /* To position the child elements inside */
-    width: 420px; /* Set width for the circle */
-    height: 420px; /* Set height for the circle */
-    background: url('images/Circle design.svg') no-repeat center center; /* vertically and hr center */
-    background-size: contain; /* Ensure the circle scales properly */
+    position: relative;
+    /* To position the child elements inside */
+    width: 420px;
+    /* Set width for the circle */
+    height: 420px;
+    /* Set height for the circle */
+    background: url('images/Circle design.svg') no-repeat center center;
+    /* vertically and hr center */
+    background-size: contain;
+    /* Ensure the circle scales properly */
 }
 
 .img-camera {
-    position: absolute; /* Position relative to the parent (background-circle) */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for the camera image's size */
-    width: 95%; /* Adjust camera size as needed */
-    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    /* Position relative to the parent (background-circle) */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust for the camera image's size */
+    width: 95%;
+    /* Adjust camera size as needed */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 /* Sponsor */
-.sponsor-items-img{
-    gap: 35px;
+.sponsor-items-img {
+    /* gap: 50px; */
     justify-content: space-between;
 }
-.sponsor-img{
+
+.sponsor-img {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 20px;
+    width: 80%;
+}
+
+/* Popular Collection */
+.collection-header {
+    justify-content: center;
+    margin-top: 6rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+
+}
+
+.main-grid-container {
+    width: 1000px;
+    margin: 0 auto;
+    border: 0.1rem;
+}
+
+.collection-image {
+    border-radius: 0.6rem;
+}
+
+.collection-heading {
+    font-size: 1.88rem;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 0px;
+    margin-top: 0.3px;
+    margin-bottom: 0.3px;
+}
+
+.collection-description {
+    margin-bottom: 0.6rem;
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.collection-container {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 0.6rem;
+}
+
+.see-more-div {
+    text-align: end;
+    width: 1000px;
+    margin: 0 auto;
+    border: 0.1rem;
+}
+
+#main-section-1 {
+    margin-bottom: 6rem;
+}
+
+/* Features */
+.features {
+    width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+}
+
+.fetures-container {
+    display: flex;
+    gap: 5rem;
+    /* align-items: center; */
+}
+
+.features-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.feature-description {
+    width: 85%;
+}
+
+.btn-bottom {
+    color: white;
+    font-weight: bold;
+    background-color: #E02C6D;
+    font-size: 16px;
+    padding: 10px 40px 10px 40px;
+    border: none;
+}
+
+/* Footer */
+footer{
+    margin: 0px;
+    padding: 0px;
+    background-color: #0A0826;
+}
+.footer-content{
+    display: block;
+    text-align: center;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.footer-icon{
+}
+
+@media screen and (max-width: 576px) {
+
+    .nav,
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .images {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-description {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    .sponsor-items-img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .main-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* justify-content: center; */
+    }
+
+    #main-section-1 {
+        display: grid;
+        /* grid-template-columns: 1fr;*/
+        margin-left: 35px;
+    }
+
+    .fetures-container {
+        /* display: grid; */
+        flex-direction: column-reverse;
+        /* grid-template-columns: 1fr; */
+    }
+
+    .features-image {
+        width: 89%;
+    }
+
+    .features {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .features-content {
+        /* display: flex; */
+        /* justify-content: center; */
+        text-align: center;
+    }
+
+    .feature-description {
+        text-align: center;
+    }
+    footer{
+        width: 1170px;
+    }
+    
 }
