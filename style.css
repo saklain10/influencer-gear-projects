@@ -6,6 +6,11 @@
     font-style: normal;
 }
 
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
 /* Shared-style */
 .display-flex {
     display: flex;
@@ -51,7 +56,10 @@ header {
     list-style: none;
     margin-right: 34px;
 }
-
+/* .search-cart{
+    display: flex;
+    margin-right: 50px;
+} */
 /* banner */
 .banner {
     gap: 100px;
@@ -188,7 +196,7 @@ img {
 }
 
 .features-title {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: bold;
 }
 
